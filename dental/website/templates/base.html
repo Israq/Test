@@ -1,0 +1,261 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Dento - Dentist &amp; Medical HTML Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Dhanmondi Dental Center</title>
+
+  <!-- Favicon --> 
+
+
+
+
+
+<!--{% static 'website/' %} -->
+
+  <link rel="icon" href="{% static 'website/img/core-img/favicon.ico' %}">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preload-content">
+      <div id="dento-load"></div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area">
+    <!-- Top Header Area -->
+    <div class="top-header-area">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <!-- Top Content -->
+          <div class="col-6 col-md-9 col-lg-8">
+            <div class="top-header-content">
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title=" Concord Arcadia Shopping Mall (5th floor), Dhanmondi, Dhaka- 1205, Bangladesh"><i class="fa fa-map-marker"></i> <span> Concord Arcadia Shopping Mall (5th floor), Dhanmondi, Dhaka- 1205, Bangladesh</span></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="info.ddentalcenter.com"><i class="fa fa-envelope"></i> <span>info.ddentalcenter.com</span></a>
+            </div>
+          </div>
+          <!-- Top Header Social Info -->
+          <div class="col-6 col-md-3 col-lg-4">
+            <div class="top-header-social-info text-right">
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Top Header End -->
+
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+      <div class="classy-nav-container breakpoint-off">
+        <div class="container">
+          <!-- Classy Menu -->
+          <nav class="classy-navbar justify-content-between" id="dentoNav">
+
+            <!-- Logo -->
+            <a class="nav-brand" href="{% url 'home' %}"><img src="{% static 'website/img/core-img/dental_logo3.png' %}" alt=""> </a>
+
+            <!-- Navbar Toggler -->
+            <div class="classy-navbar-toggler">
+              <span class="navbarToggler"><span></span><span></span><span></span></span>
+            </div>
+
+            <!-- Menu -->
+            <div class="classy-menu">
+
+              <!-- Close Button -->
+              <div class="classycloseIcon">
+                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+              </div>
+
+              <!-- Nav Start -->
+              <div class="classynav">
+                <ul id="nav">
+                
+                  <li><a href="about.html"> Who We Are</a>
+                  <ul class="dropdown">
+                      <li><a href="about.html">- About Us</a></li>
+                      <li><a href="blog_details.html">- Vision Mission</a></li>
+                      <li><a href="blog_details.html">- Technology We Use</a></li>
+                      <li><a href="blog_details.html">- Publication</a></li>
+                      <li><a href="blog_details.html">- FAQ</a></li>
+
+                    </ul>
+                  </li>
+                  
+                      <li><a href="blog.html"> Services</a>
+                         <ul class="dropdown">
+                      <li><a href="blog.html">- Special Dentistry</a>
+                      <ul class="dropdown">
+                      <li><a href="implant.html">- Dental Implant</a></li>
+                      <li><a href="blog_details.html">- Root Canal Treatment</a></li>
+                      <li><a href="blog.html">- Orthodontics Treatment</a></li>
+                      <li><a href="blog_details.html">- Children Dentistry</a></li>
+                    </ul></li>
+                      <li><a href="service.html">- General Dentistry</a></li>
+                      
+                    </ul>
+                      </li>
+                      <li><a href="blog_details.html"> Dentists</a></li>
+                              </li>
+                  <li><a href="pricing.html">Gallery</a></li>
+                  <li><a href="#">Blog</a>
+                    <ul class="dropdown">
+                      <li><a href="blog.html">- Blog</a></li>
+                      <li><a href="blog_details.html">- Blog Details</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="./contact.html">Contact</a></li>
+                </ul>
+              </div>
+              <!-- Nav End -->
+            </div>
+
+            <!-- Booking Now Button -->
+            <a href="appointment.html" class="btn dento-btn booking-btn">Booking Now</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-c62259cc-14ab-4fe6-a382-02433200c643"></div>
+
+{% block content %}
+
+{% endblock %}
+
+
+
+<!-- ***** Footer Area Start ***** -->
+  <footer class="footer-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/3.jpg' %});">
+    <div class="container">
+      <div class="row">
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-footer-widget">
+            <a href="{% url 'home' %}" class="d-block mb-4"><img src="{% static 'website/img/core-img/dental_logo2.png' %}" alt=""></a>
+            <p>Etiam sutor risus, dapibus act elefend katen, lacinia sitamet denim. Mauris sagittis kansa interdum dignissim.</p>
+            <div class="footer-contact">
+              <p><i class="icon_pin"></i>Concord Arcadia Shopping Mall (5th floor),<a> Dhanmondi, </a>Dhaka- 1205, Bangladesh</p>
+              <p><i class="icon_phone"></i> +8801765-65454</p>
+              <p><i class="icon_mail"></i> info@ddentalcenter.com</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Opening Hours</h5>
+
+            <!-- Opening Hours -->
+            <ul class="opening-hours">
+              <li><span>Mon-Wed</span> <span>8.00-18.00</span></li>
+              <li><span>Thu-Fri</span> <span>8.00-17.00</span></li>
+              <li><span>Sat</span> <span>9.00-17.00</span></li>
+              <li><span>Sun</span> <span>10.00-17.00</span></li>
+              <li><span>Holiday</span> <span>Closed</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Quick Link</h5>
+
+            <!-- Quick Links Nav -->
+            <nav>
+              <ul class="quick-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Policy</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Advisors</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Dentist</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Legals</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Newsletter</h5>
+
+            <p>We will send out weekly newest article and some great offers</p>
+            <!-- Newsletter Form -->
+            <div class="footer-newsletter-form">
+              <form action="#" method="post">
+                <input type="email" name="nl-email" value="" placeholder="Email Address">
+                <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+              </form>
+            </div>
+
+            <!-- Social Info -->
+            <div class="footer-social-info">
+              <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copywrite Area -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="copywrite-content">
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright- &copy;<script>document.write(new Date().getFullYear());</script> Powered By <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Bizstring Limited</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ***** Footer Area End ***** -->
+
+  <!-- ******* All JS ******* -->
+  <!-- jQuery js -->
+  <script src="{% static 'website/js/jquery.min.js' %}"></script>
+  <!-- Popper js -->
+  <script src="{% static 'website/js/popper.min.js' %}"></script>
+  <!-- Bootstrap js -->
+  <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+  <!-- All js -->
+  <script src="{% static 'website/js/dento.bundle.js' %}"></script>
+  <!-- Active js -->
+  <script src="{% static 'website/js/default-assets/active.js' %}"></script>
+
+</body>
+
+</html>
